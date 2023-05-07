@@ -27,7 +27,7 @@ def search():
         values = formatData(radio=radio, searchTo=searchTo, searchFrom=searchFrom, deicing=deicing)
         print(values)
         if not values:
-            return render_template('clearskieserror.html')
+            return render_template('error.html')
         if values == "NOMETAR":
             return render_template('nometar')
     else:

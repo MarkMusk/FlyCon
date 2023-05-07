@@ -10,30 +10,50 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
 </head>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-    <img src="https://i.ibb.co/L6RYqrb/windsock.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-        FlyCon
-    </a>       
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/how">How to Use</a>
-        </li>
-
-      </ul>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+      <img src="https://i.ibb.co/L6RYqrb/windsock.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          FlyCon
+      </a>       
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="/how">How to Use</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="/ai">AI Questionaire</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  
-</nav>
+    
+  </nav>
   <body data-bs-theme="dark">
-    <center><h1 class="h2" style="margin: 10px 10px 10px 10px;"><b>How to use</b></h1></center>
-    <p>afds</p>
+
+        <center><div class="card text-bg-danger mb-3" style="width:80%;margin: 10px 10px 10px 10px;">
+            <div class="card-header h4"><b>How to use</b></div>
+            <div class="card-body">
+              <p class="card-text h5">Select either the “ICAO” or LAT and LONG in the search menu to search for specific airports that you are flying from and too.
+                <br>
+                If you select “ICAO”, type the ICAO code for the airport you are referencing.
+                <br>
+                If you select LAT and LONG, type the latitude followed by the longitude of the airport you are referencing.
+                <br>
+                To find either one (“ICAO” or LAT and LONG), ask the AI the name of the airport and it will provide you with the corresponding ICAO followed by latitude and longitude.
+                <br>
+                After the previous process is completed the website will show you the danger level of the route, as well as some information and data of the airport.
+                <br>
+                If you want a more specific explanation of the weather conditions type in the route name followed by “conditions” in the AI search bar and the AI will provide you with an elaborate explanation of the weather and what to be looking out for.
+                <br>
+                The <a href="/ai" class="h5" style="">AI</a> can answer any question regarding airports and the weather.</p>
+            </div>
+          </div></center>
+          
   </body>
 </html>
