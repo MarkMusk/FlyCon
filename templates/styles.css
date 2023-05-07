@@ -1,0 +1,15 @@
+nav ul li a::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #fff;
+    display: block;
+    margin: auto;
+  }
+  
+  nav ul li a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+  }
+  
+  
